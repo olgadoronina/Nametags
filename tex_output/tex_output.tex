@@ -1,0 +1,41 @@
+\documentclass[letter, 12pt]{letter}
+\usepackage{ticket}
+\usepackage{graphicx}
+
+\usepackage{geometry}
+\geometry{
+	left=0.6875in,
+	right = 0.6875in,
+	top=0.5625in,
+	bottom = 0.5625in
+}
+
+\setlength{\unitlength}{1in}
+\ticketNumbers{2}{4}
+\ticketSize{3.375}{2.33} %in unitlength
+\ticketDistance{0.38}{0.1875} %in unitlength
+
+\renewcommand{\ticketdefault}{%
+	\put(0.0375,  1.6){\includegraphics[width=3.3in]{logo}}
+}
+
+\newcommand{\confpin}[6]{\ticket{%
+		\put(1.6875, 1.25){\makebox[0mm]{\bfseries\LARGE #1}}
+		\put(1.6875, 1.0){\makebox[0mm]{\bfseries\LARGE #2}}
+		\put(1.6875, 0.75){\makebox[0mm]{\bfseries\large #3}}
+		\put(1.6875,0.52){\makebox(0,0){\bfseries #4}}%
+		\put(1.6875,0.3){\makebox(0,0){\bfseries\large #5}}%
+		\put(1.6875,0.1){\makebox(0,0){\bfseries\large #6}}%
+}}
+
+\begin{document}
+	\sffamily
+	\confpin{Olga1 Doronina}{}{Graduate Student}{Mechanical Engineering}{ University of Colorado, Boulder}{}
+	\confpin{Olga2 Doronina}{}{Graduate Student}{Mechanical Engineering}{ University of Colorado, Boulder}{}
+	\confpin{Olga3 Doronina}{}{Graduate Student}{Mechanical Engineering}{ University of Colorado, Boulder}{}
+	\confpin{Olga4 Doronina}{}{Graduate Student}{Mechanical Engineering}{ University of Colorado, Boulder}{}
+	\confpin{Olga5 Doronina}{}{Graduate Student}{Mechanical Engineering}{ University of Colorado, Boulder}{}
+	\confpin{Olga6 Doronina}{}{Graduate Student}{Mechanical Engineering}{ University of Colorado, Boulder}{}
+	\confpin{Olga7 Doronina}{}{Graduate Student}{Mechanical Engineering}{ University of Colorado, Boulder}{}
+	\confpin{Olga8 Doronina}{}{Graduate Student}{Mechanical Engineering}{ University of Colorado, Boulder}{}
+\end{document}
