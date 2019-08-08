@@ -1,6 +1,9 @@
 import os
 import pandas as pd
 
+# to run this script use:
+# python3 excel2tex_nametags.py
+
 #############################################
 # Defining paths
 #############################################
